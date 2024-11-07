@@ -1,5 +1,6 @@
 turma = [
     {
+        modulo: "3º Módulo",
         curso: "Técnico em Biocombustíveis",
         disciplina: "Projeto",
         professor: "Eliomau Gomes",
@@ -7,6 +8,7 @@ turma = [
         alunos: 20
     },
     {
+        modulo: "4º Módulo",
         curso: "Técnico em Informática",
         disciplina: "Desenvolvimento Web II",
         professor: "Fabiano Vaz",
@@ -15,24 +17,28 @@ turma = [
     },
 ]
 
-document.querySelector("#carregar").addEventListener('click', mostrar)
-document.querySelector("#navegar").addEventListener('click', proximo)
+document.querySelector("#carregar").addEventListener('click', carregar)
+document.querySelector("#navegar").addEventListener('click', navegar)
 
-function mostrar(){
+var cont = -1
+function carregar(){
+    cont = 0
+    document.querySelector("#modulo").textContent = turma[0].modulo
     document.querySelector("#curso").textContent = turma[0].curso
     document.querySelector("#disc").textContent = turma[0].disciplina
     document.querySelector("#professor").textContent = turma[0].professor
     document.querySelector("#turno").textContent = turma[0].turno
     document.querySelector("#qtd").textContent = turma[0].alunos
 }
-var cont = 0
-function proximo(){
+
+function navegar(){
+    cont++
+    document.querySelector("#modulo").textContent = turma[cont].modulo
     document.querySelector("#curso").textContent = turma[cont].curso
     document.querySelector("#disc").textContent = turma[cont].disciplina
     document.querySelector("#professor").textContent = turma[cont].professor
     document.querySelector("#turno").textContent = turma[cont].turno
     document.querySelector("#qtd").textContent = turma[cont].alunos
-    cont++
 }
 
 function teste(){

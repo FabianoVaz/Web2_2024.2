@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="box" id="form" action="#">
+        <h3 id="curso">Técnico em Informática</h3>
+        
+        <div class="bloco">
+            <label class="legenda" for="">Módulo</label>
+            <input class="valor" type="text" name="modulo">
+        </div>
+
+        <div class="bloco">
+            <label class="legenda" for="">Disciplina</label>
+            <input class="valor" type="text" name="disciplina">
+        </div>
+        
+        <div class="bloco">
+            <label class="legenda" for="">Professor</label>
+            <input class="valor" type="text" name="professor">
+        </div>
+            
+        <div class="bloco">
+            <label class="legenda" for="">Turno</label>
+            <input class="valor" type="text" name="turno">
+        </div>
+
+        <div class="bloco">
+            <label class="legenda" for="">Alunos</label>
+            <input class="valor" type="text" name="alunos">
+        </div>
+        
+        <div class="btns">
+            <button type="submit"> Adcionar</button>
+        </div>
+    </form>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Módulo</th>
+                <th>Disciplina</th>
+                <th>Professor</th>
+                <th>Turno</th>
+                <th>Alunos</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-turma">
+            
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
