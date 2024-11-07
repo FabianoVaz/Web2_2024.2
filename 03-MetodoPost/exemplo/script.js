@@ -32,7 +32,6 @@ function carregarDados(){
     tabela.innerHTML = ""
     
     console.log(turma)
-
     turma.map( item => {
         tabela.innerHTML += `
                 <tr>
