@@ -27,10 +27,10 @@ const tabela = document.querySelector("#tabela-turma")
 
 turma.map( item => {
     tabela.innerHTML += `
-            <tr>
-                <td>${item.disciplina}</td>
-                <td>${item.professor}</td>
-                <td>${item.alunos}</td>
-            </tr>
-            `
+        <tr>
+            <td>${item.disciplina}</td>
+            <td>${item.professor}</td>
+            <td>${item.alunos}</td>
+        </tr>
+        `
 })
