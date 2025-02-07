@@ -1,0 +1,68 @@
+*{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    background-color: #eee;
+}
+
+.title{
+    font-weight: 900;
+}
+
+#lista-paises{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.paises-item{
+    height: 8vh;
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.paises-flag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+}
+.paises-flag img{
+    height: 5vh;
+    width: 5vw;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.5);
+}
+
+.paises-text{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+}
+
+.pais{
+    font-weight: 600;
+}
+
+.capital{
+    font-size: small;
+}

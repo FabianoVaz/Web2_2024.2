@@ -41,3 +41,12 @@ body{
     width: 70%;
 }
 
+table{
+    background-color: #fff;
+    border-collapse: collapse;
+    min-width: 60%;
+}
+
+th{ background-color: #c1c1c170;}
+
+th, td{ padding: 3px;}
