@@ -1,7 +1,7 @@
 mostrar()
 
 function mostrar(){
-    fetch('https://n8n.fabianovaz.com.br/webhook/turma')
+    fetch('http://localhost:3000/turma')
     .then( response => response.json())
     .then( turma => {
         const tabela = document.querySelector("#tabela-turma")
@@ -40,7 +40,7 @@ function cadastrar(event){
         alunos: parseInt(form.get('alunos'))
     }
 
-    fetch('https://n8n.fabianovaz.com.br/webhook/turma',
+    fetch('http://localhost:3000/turma',
     {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
