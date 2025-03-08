@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="style_venda.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="img/ifba-h.png" alt="" height="100px">
+        <div class="nav-links">
+            <a href="produto.html">Produtos</a>
+            <a href="cliente.html">Clientes</a>
+            <a href="#">Vendas</a>
+            <a href="novaVenda.html">Nova Venda</a>
+            <a href="#" onclick="logout()">Sair</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="actions">
+            <input type="text" class="search-box" placeholder="Buscar vendas..." onkeyup="filterVendas()">
+        </div>
+
+        <table id="usersTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Data</th>
+                    <th>Cliente</th>
+                    <th>Total</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="vendasTableBody">
+                <!-- Preenchido via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script_venda.js"></script>
+</body>
+</html> 
